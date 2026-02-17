@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Petal & Pearl</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .login-image-side {
+            background: url('assets/images/hero.png') no-repeat center center;
+            background-size: cover;
+            position: relative;
+        }
+
+        .login-image-overlay {
+            background: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+
+    <div class="container-fluid vh-100 overflow-hidden">
+        <div class="row h-100">
+            <!-- Image Side (Hidden on mobile) -->
+            <div class="col-lg-7 col-xl-8 d-none d-lg-block p-0 login-image-side">
+                <div class="login-image-overlay"></div>
+                <div class="position-absolute bottom-0 start-0 p-5 text-white z-1">
+                    <h2 class="display-4 font-serif mb-3">Welcome to Floral Artistry</h2>
+                    <p class="lead text-white-50">Experience the elegance of nature's finest blooms.</p>
+                </div>
+            </div>
+
+            <!-- Form Side -->
+            <div
+                class="col-lg-5 col-xl-4 d-flex align-items-center justify-content-center p-5 bg-white position-relative">
+                <!-- Back Button -->
+                <a href="index.html" class="position-absolute top-0 end-0 m-4 text-muted text-decoration-none">
+                    <i class="bi bi-x-lg fs-4"></i>
+                </a>
+
+                <div class="w-100" style="max-width: 400px;">
+                    <div class="mb-5">
+                        <h1 class="font-serif fw-bold display-6 mb-2">Login</h1>
+                        <p class="text-muted">Enter your details to access your account.</p>
+                    </div>
+
+                    <form>
+                        <div class="mb-4">
+                            <label for="email" class="form-label small text-muted text-uppercase fw-bold">Email
+                                Address</label>
+                            <input type="email" class="form-control border-0 border-bottom rounded-0 px-0 py-2"
+                                id="email" placeholder="name@example.com" required style="background: transparent;">
+                        </div>
+                        <div class="mb-4">
+                            <label for="password"
+                                class="form-label small text-muted text-uppercase fw-bold">Password</label>
+                            <input type="password" class="form-control border-0 border-bottom rounded-0 px-0 py-2"
+                                id="password" placeholder="••••••••" required style="background: transparent;">
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center mb-5 small">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="remember"
+                                    style="border-color: var(--color-gold);">
+                                <label class="form-check-label text-muted" for="remember">Remember me</label>
+                            </div>
+                            <a href="#" class="text-gold text-decoration-none">Forgot Password?</a>
+                        </div>
+
+                        <button type="submit" class="btn btn-pearl w-100 py-3 mb-4 rounded-0">Sign In</button>
+
+                        <div class="text-center">
+                            <span class="text-muted small">New to Petal & Pearl? </span>
+                            <a href="signup.html" class="text-dark fw-bold text-decoration-none small ms-1">Create
+                                Account</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
